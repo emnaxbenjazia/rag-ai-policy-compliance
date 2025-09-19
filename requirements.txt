@@ -1,0 +1,21 @@
+# --- Core app ---
+streamlit==1.36.0
+python-dotenv==1.0.1
+PyPDF2==3.0.1
+faiss-cpu==1.8.0
+
+# --- Embeddings (sentence-transformers depends on these) ---
+torch==2.2.2
+transformers==4.40.2
+accelerate==0.29.3
+sentence-transformers==2.7.0
+
+# --- LangChain stack ---
+langchain==0.2.6
+langchain-community==0.2.6
+# intentionally omit langchain-core pin; let deps choose a compatible version
+
+langchain-openai==0.1.15
+
+# --- Tokenization helpers (used in chunking / embeddings) ---
+tiktoken==0.7.0
